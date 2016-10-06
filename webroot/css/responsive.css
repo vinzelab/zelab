@@ -1,0 +1,72 @@
+
+@media (max-width: 1300px) {
+  h1.masking {font-size:60px;}
+}
+@media (max-width: 415px) {
+  h1{
+    font-size: 1.3em;
+    line-height: 2.5em;
+  }
+  h2{
+    font-size:1em;
+  }
+  section h2:before, section h2:after{
+    width: 25px;
+  }
+  h1.masking{
+    font-size:23px;
+  }
+  footer h2{
+    letter-spacing: 5px;
+  }
+  .contact-form{
+    padding: 0;
+  }
+  .sticky-header{
+    display: none;
+  }
+  .fixed{
+    position: relative
+  }
+  form{
+    width: auto;
+  }
+  .text-project{
+    column-count: auto;
+    -webkit-column-count: auto;
+    -moz-column-count: auto;
+  }
+  .img-project img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .skill-block {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;}
+  .scroll-wrapper {
+    position: relative;
+    width: 100%;}
+  .button_container{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    right: 0%;
+    top: 15%;
+    z-index: 9999;
+    margin-top:5px;
+  }
+  .desktop-menu,.menu-header,.header-project{
+    display: none;
+  }
+  .logo-zelab{
+    margin-top:50%;
+  }
+}
+@media (max-width: 320px) {
+  .logo-zelab {
+    margin-top: 30%;}
+  }
+  /*end of media */
