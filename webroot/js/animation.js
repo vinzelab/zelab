@@ -1,3 +1,7 @@
+//open eye
+// $(document).ready(function(){
+// 	$('#eyeclose').attr('d',"M101-9C19.1-9-44.7,39.8-123,119c67.4,67.7,133.5,106.5,233.5,106.5c99.9,0,163.9-54.9,214.5-105.1C273.2,61.6,199.8-9,101-9z");
+// });
 //scroll animation
 
 $(document).ready(function(){
@@ -60,4 +64,32 @@ $( "#work" ).mouseout(function( event ) {
 $('#toggle').click(function() {
 	$(this).toggleClass('active');
 	$('#overlay').toggleClass('open');
+});
+//scroll skills
+var lastmousewheel=0;
+
+$(document).ready(function(){
+
+// Animation on mousewheel
+$(window).on("wheel mousewheel", function(e){
+  var speedwheel=e.originalEvent.wheelDelta;
+if(speedwheel<-100){
+  lastmousewheel=lastmousewheel+1;
+  console.log(lastmousewheel);
+}
+else if(speedwheel>100){
+  console.log("up");
+  lastmousewheel=lastmousewheel-1;
+  console.log(lastmousewheel);
+}
+
+if(lastmousewheel<=0){
+  $(".skills-icon").css("color","#afafbc");
+	lastmousewheel=0;
+}
+else if (lastmousewheel<5) {
+	$(".skills-icon").css("color","#2461A0");
+}
+});
+
 });
